@@ -1,0 +1,710 @@
+COUNTRIES
+
+-- public.countries definition
+
+-- Drop table
+
+-- DROP TABLE public.countries;
+
+CREATE TABLE public.countries (
+	id int8 NOT NULL,
+	code varchar(20) NOT NULL,
+	description varchar(50) NOT NULL,
+	code_phone varchar(20) NOT NULL,
+	status bool NOT NULL DEFAULT true,
+	CONSTRAINT countries_pkey PRIMARY KEY (id)
+);
+
+
+
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('VEN', 'Venezuela', '+58', true);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('AFG', 'Afghanistan ', '+93', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('ALB', 'Albania ', '+355', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('ALG', 'Algeria ', '+213', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('ASA', 'American Samoa', '+1-684', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('AND', 'Andorra Principality of ', '+376', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('ANG', 'Angola', '+244', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Anguilla ', '+1-264', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Antartica', '+672', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('ANT', 'Antigua and Barbuda', '+1-268', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('ARG', 'Argentina ', '+54', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('ARM', 'Armenia', '+374', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('ARU', 'Aruba', '+297', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('AUS', 'Australia', '+61', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('AUT', 'Austria', '+43', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('AZE', 'Azerbaijan', '+994', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('BAH', 'Bahamas Commonwealth of The', '+1-242', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('BRN', 'Bahrain Kingdom of ', '+973', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES ('BAN', 'Bangladesh', '+880', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('BAR', 'Barbados ', '+1-246', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('BLR', 'Belarus', '+375', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('BEL', 'Belgium ', '+32', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('BIZ', 'Belize', '+501', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('BEN', 'Benin', '+229', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('BER', 'Bermuda ', '+1-441', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('BHU', 'Bhutan Kingdom of', '+975', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('BOL', 'Bolivia ', '+591', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('BIH', 'Bosnia and Herzegovina ', '+387', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('BOT', 'Botswana', '+267', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('BRA', 'Brazil ', '+55', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('BRU', 'Brunei', '+673', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('BUL', 'Bulgaria ', '+359', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('BUR', 'Burkina Faso', '+226', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('BDI', 'Burundi', '+257', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('CAM', 'Cambodia Kingdom of', '+855', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('CMR', 'Cameroon', '+237', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('CAN', 'Canada ', '+1', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('CPV', 'Cape Verde ', '+238', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('CAY', 'Cayman Islands ', '+1-345', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('CAF', 'Central African Republic ', '+236', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('CHA', 'Chad ', '+235', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('CHI', 'Chile ', '+56', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('CHN', 'China ', '+86', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('CHN', 'Christmas Island ', '+53', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Cocos Islands ', '+61', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('COL', 'Colombia ', '+57', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('COM', 'Comoros Union of the ', '+269', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('COD', 'Congo Democratic Republic of the', '+243', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('CGO', 'Congo Republic of the', '+242', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('COK', 'Cook Islands', '+682', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('CRC', 'Costa Rica ', '+506', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('CIV', 'Cote DIvoire', '+225', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('CRO', 'Croatia', '+385', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('CUB', 'Cuba ', '+53', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('CYP', 'Cyprus ', '+357', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('CZE', 'Czech Republic', '+420', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('DEN', 'Denmark ', '+45', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('DJI', 'Djibouti', '+253', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('DMA', 'Dominica ', '+1-767', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('DOM', 'Dominican Republic ', '+1-809', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('DOM', 'Dominican Republic ', '+1-829', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('TLS', 'East Timor', '+670', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('ECU', 'Ecuador ', '+593 ', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('EGY', 'Egypt', '+20', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('ESA', 'El Salvador ', '+503', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('GEQ', 'Equatorial Guinea ', '+240', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('ERI', 'Eritrea ', '+291', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('EST', 'Estonia ', '+372', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('ETH', 'Ethiopia ', '+251', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Falkland Islands ', '+500', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Faroe Islands ', '+298', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('FIJ', 'Fiji ', '+679', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('FIN', 'Finland ', '+358', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('FRA', 'France ', '+33', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'French Guiana or French Guyana ', '+594', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'French Polynesia ', '+689', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('GAB', 'Gabon ', '+241', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('GAM', 'Gambia The ', '+220', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('GEO', 'Georgia ', '+995', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('GAM', 'Germany ', '+49', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('GHA', 'Ghana ', '+233', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Gibraltar ', '+350', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('GRE', 'Greece ', '+30', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Greenland ', '+299', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('GRN', 'Grenada ', '+1-473', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Guadeloupe', '+590', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('GUM', 'Guam', '+1-671', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('GUA', 'Guatemala ', '+502', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('GUI', 'Guinea ', '+224', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('GBS', 'Guinea-Bissau ', '+245', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('GUY', 'Guyana ', '+592', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('HAI', 'Haiti ', '+509', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('HON', 'Honduras ', '+504', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('HKG', 'Hong Kong ', '+852', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('HUN', 'Hungary ', '+36', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('ISL', 'Iceland ', '+354', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('IND', 'India ', '+91', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('INA', 'Indonesia ', '+62', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('IRI', 'Iran Islamic Republic of', '+98', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('IRQ', 'Iraq ', '+964', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('IRL', 'Ireland ', '+353', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('ISR', 'Israel ', '+972', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('ITA', 'Italy ', '+39', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('JAM', 'Jamaica ', '+1-876', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('JPN', 'Japan ', '+81', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('JOR', 'Jordan ', '+962', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('KAZ', 'Kazakstan', '+7', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('KEN', 'Kenya ', '+254', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('KIR', 'Kiribati ', '+686', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('PRK', 'Korea Democratic People Republic of ', '+850', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('KOR', 'Korea Republic of ', '+82', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('KUW', 'Kuwait ', '+965', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('KGZ', 'Kyrgyzstan ', '+996', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('LAO', 'Lao People Democratic Republic ', '+856', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('LY', 'Latvia ', '+371', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('LBN', 'Lebanon ', '+961', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('LES', 'Lesotho ', '+266', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('LBR', 'Liberia ', '+231', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('LBA', 'Libya ', '+218', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('LIE', 'Liechtenstein ', '+423', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('LTU', 'Lithuania ', '+370', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('LUX', 'Luxembourg ', '+352', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Macau ', '+853', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('MKD', 'Macedonia The Former Yugoslav Republic of', '+389', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('MAD', 'Madagascar ', '+261', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('MAW', 'Malawi ', '+265', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('MAS', 'Malaysia ', '+60', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('MDV', 'Maldives ', '+960', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('MLI', 'Mali ', '+223', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('MLT', 'Malta ', '+356', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('MHL', 'Marshall Islands ', '+692', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Martinique ', '+596', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('MTN', 'Mauritania ', '+222', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('MRI', 'Mauritius ', '+230', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Mayotte ', '+269', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('MEX', 'Mexico ', '+52', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('FSM', 'Micronesia Federated States of ', '+691', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('MDA', 'Moldova Republic of', '+373', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('MON', 'Monaco Principality of', '+377', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('MGL', 'Mongolia ', '+976', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Montserrat ', '+1-664', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('MAR', 'Morocco ', '+212', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('MOZ', 'Mozambique ', '+258', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('MYA', 'Myanmar Union of ', '+95', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('NAM', 'Namibia ', '+264', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('NRU', 'Nauru ', '+674', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('NEP', 'Nepal ', '+977', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('NED', 'Netherlands ', '+31', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Netherlands Antilles ', '+599', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'New Caledonia ', '+687', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('NZL', 'New Zealand ', '+64', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('NCA', 'Nicaragua ', '+505', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('NIG', 'Niger ', '+227', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('NGR', 'Nigeria ', '+234', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Niue ', '+683', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Norfolk Island ', '+672', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Northern Mariana Islands ', '+1-670', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('NOR', 'Norway ', '+47', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('OMA', 'Oman Sultanate of ', '+968', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('PAK', 'Pakistan ', '+92', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('PLW', 'Palau ', '+680', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('PLE', 'Palestinian State ', '+970', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('PAN', 'Panama ', '+507', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('PNG', 'Papua New Guinea ', '+675', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('PAR', 'Paraguay ', '+595', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('PER', 'Peru ', '+51', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('PHI', 'Philippines ', '+63', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('POL', 'Poland ', '+48', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('POR', 'Portugal ', '+351', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('PUR', 'Puerto Rico ', '+1-787', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('PUR', 'Puerto Rico ', '+1-939', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Qatar State of ', '+974 ', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Reunion ', '+262', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('ROU', 'Romania ', '+40', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('RUS', 'Russian Federation ', '+7', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('RWA', 'Rwanda ', '+250', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Saint Helena ', '+290', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('SKN', 'Saint Kitts and Nevis ', '+1-869', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('LCA', 'Saint Lucia ', '+1-758', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Saint Pierre and Miquelon ', '+508', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('VIN', 'Saint Vincent and the Grenadines ', '+1-784', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('SAM', 'Samoa ', '+685', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('SMR', 'San Marino ', '+378', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('STP', 'Sao Tome and Principe ', '+239', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('KSA', 'Saudi Arabia ', '+966', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('SEN', 'Senegal ', '+221', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('SEY', 'Seychelles ', '+248', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('SLE', 'Sierra Leone ', '+232', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('SGP', 'Singapore ', '+65', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('SVK', 'Slovakia', '+421', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('SLO', 'Slovenia ', '+386', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('SOL', 'Solomon Islands ', '+677', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('SOM', 'Somalia ', '+252', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('RSA', 'South Africa ', '+27', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('ESP', 'Spain ', '+34', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('SRI', 'Sri Lanka ', '+94', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('SUD', 'Sudan ', '+249', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('SUR', 'Suriname ', '+597', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('SWZ', 'Swaziland Kingdom of ', '+268', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('SWE', 'Sweden ', '+46', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('SUI', 'Switzerland ', '+41', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('SYR', 'Syria ', '+963', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('TPE', 'Taiwan ', '+886', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('TJK', 'Tajikistan ', '+992', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('TAN', 'Tanzania United Republic of ', '+255', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('THA', 'Thailand ', '+66', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Tokelau ', '+690', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('TGA', 'Tonga Kingdom of ', '+676', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('TTO', 'Trinidad and Tobago ', '+1-868', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('TUN', 'Tunisia ', '+216', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('TUR', 'Turkey ', '+90', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('TKM', 'Turkmenistan ', '+993', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Turks and Caicos Islands ', '+1-649', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('TUV', 'Tuvalu ', '+688', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('UGA', 'Uganda Republic of', '+256', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('UKR', 'Ukraine ', '+380', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('UAE', 'United Arab Emirates ', '+971', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('GBR', 'United Kingdom ', '+44', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('USA', 'United States ', '+1', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('URU', 'Uruguay Oriental Republic of ', '+598', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('UZB', 'Uzbekistan ', '+998', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('VAN', 'Vanuatu ', '+678', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Vatican City State ', '+418', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('VIE', 'Vietnam ', '+84', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('IVB', 'Virgin Islands British ', '+1-284', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('ISV', 'Virgin Islands United States ', '+1-340', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('', 'Wallis and Futuna Islands ', '+681', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('YEM', 'Yemen ', '+967', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('ZAM', 'Zambia Republic of ', '+260', false);
+INSERT INTO public.countries
+(code, description, code_phone, status)
+VALUES('ZIM', 'Zimbabwe Republic of ', '+263', false);
+

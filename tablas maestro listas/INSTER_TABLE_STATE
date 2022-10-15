@@ -1,0 +1,26 @@
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(10, 'AMAZONAS', 'VE-Z', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(14, 'ANZOÁTEGUI', 'VE-B', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(13, 'APURE', 'VE-C', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(8, 'ARAGUA', 'VE-D', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(12, 'BARINAS', 'VE-E', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(10, 'BOLÍVAR', 'VE-F', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(8, 'CARABOBO', 'VE-G', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(8, 'COJEDES', 'VE-H', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(10, 'DELTA AMACURO', 'VE-Y', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(7, 'DISTRITO CAPITAL', 'VE-A', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(9, 'FALCÓN', 'VE-I', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(13, 'GUÁRICO', 'VE-J', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(9, 'LARA', 'VE-K', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(7, 'MIRANDA', 'VE-M', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(14, 'MONAGAS', 'VE-N', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(12, 'MÉRIDA', 'VE-L', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(11, 'NUEVA ESPARTA', 'VE-O', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(9, 'PORTUGUESA', 'VE-P', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(14, 'SUCRE', 'VE-R', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(12, 'TRUJILLO', 'VE-T', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(12, 'TÁCHIRA', 'VE-S', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(7, 'VARGAS', 'VE-X', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(9, 'YARACUY', 'VE-U', 1);
+INSERT INTO public.states (id_region, description, code, id_countries) VALUES(15, 'ZULIA', 'VE-V', 1);
+
+

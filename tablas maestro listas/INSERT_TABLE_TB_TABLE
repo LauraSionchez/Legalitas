@@ -1,0 +1,5 @@
+INSERT INTO public.tb_tables (description, status) VALUES('TIPO DE DOCUMENTO', true);
+INSERT INTO public.tb_tables (description, status) VALUES('GRUPO DE USUARIO', true);
+INSERT INTO public.tb_tables (description, status) VALUES('REGIÓN', true);
+INSERT INTO public.tb_tables (description, status) VALUES('TIPO DE MONEDA', true);
+INSERT INTO public.tb_tables (description, status) VALUES('TIPOS DE ACCIÓN', true);

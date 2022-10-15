@@ -1,0 +1,11 @@
+INSERT INTO public.submodules (id_modules, description, code) VALUES(1, 'Usuarios', 'USERS');
+INSERT INTO public.submodules (id_modules, description, code) VALUES(1, 'Permisos', 'PERMITS');
+INSERT INTO public.submodules (id_modules, description, code) VALUES(1, 'Sesiones', 'SESSIONS');
+INSERT INTO public.submodules (id_modules, description, code) VALUES(2, 'Maestro', 'MASTER');
+INSERT INTO public.submodules (id_modules, description, code) VALUES(3, 'Abogado', 'ATTONEY');
+INSERT INTO public.submodules (id_modules, description, code) VALUES(3, 'Cliente', 'CLIENT');
+INSERT INTO public.submodules (id_modules, description, code) VALUES(3, 'Expediente', 'DOSSIER');
+INSERT INTO public.submodules (id_modules, description, code) VALUES(3, 'Asignación de Caso', 'AFFAIR');
+INSERT INTO public.submodules (id_modules, description, code) VALUES(3, 'Asignación de Fiscal', 'PROSECUTOR');
+INSERT INTO public.submodules (id_modules, description, code) VALUES(3, 'Consulta', 'RECORDS');
+

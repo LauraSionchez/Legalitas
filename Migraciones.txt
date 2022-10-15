@@ -1,0 +1,27 @@
+php artisan make:model TbTable -a
+php artisan make:model TbMaster -a
+php artisan make:model State -a
+php artisan make:model City -a
+php artisan make:model Municipality -a
+php artisan make:model Parish -a
+php artisan make:model PostalCode -a
+php artisan make:model Module -a
+php artisan make:model Submodule -a
+php artisan make:model Audit -a
+php artisan make:model User -a
+php artisan make:model Person -a
+php artisan make:model Permittion -a
+php artisan make:model Session -a
+php artisan make:model FailedLogin -a
+
+
+php artisan make:model Client -a
+php artisan make:model Attorney -a
+php artisan make:model Dossier -a
+
+php artisan make:model Affair -a
+php artisan make:model PosecutorCase -a
+
+
+
+

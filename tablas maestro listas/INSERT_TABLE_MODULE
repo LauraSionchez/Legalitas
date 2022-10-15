@@ -1,0 +1,4 @@
+INSERT INTO public.modules (description, status, logo, code) VALUES('Seguridad', true, 'fas fa-lock', 'SECURITY');
+INSERT INTO public.modules (description, status, logo, code) VALUES('Mantenimiento', true, 'fas fa-cog', 'MAINTENANCE');
+INSERT INTO public.modules (description, status, logo, code) VALUES('Administración', true, 'fas fa-file-invoice', 'MANAGEMENT');
+
