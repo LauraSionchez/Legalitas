@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Session extends Model
 {
     use HasFactory;
+
+    protected $table = "sessions";  
+    protected $fillable = ['id','date','code_verification','id_users'];
+    protected $connection = "psql";
+    public $timestamps = false;
+
+    public function getUser() {
+        return $this->belongsTo(User::class, 'id_users');
+    }
 }

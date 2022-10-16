@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class PostalCode extends Model
 {
     use HasFactory;
+
+    protected $table = "postal_codes";  
+    protected $fillable =  ['id','description'];
+    protected $connection = "psql";
+    public $timestamps = false
 }
